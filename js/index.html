@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Todo List</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body {
+background-color: #0a0f24;
+font-family: Arial, sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+color: #fff;
+}>
+
+
+<div class="container">
+<h1 {
+text-align: center;
+color: #fff;
+margin-bottom: 20px;
+}>Todo List</h1>
+
+
+<div class="form-box">
+<input type="text" id="todoInput" placeholder="Add a todo ..." />
+<input type="date" id="dateInput" />
+<button id="addBtn">+</button>
+</div>
+
+
+<div class="control-row">
+<input type="text" id="filterInput" placeholder="FILTER" class="filter-btn">
+<button id="deleteAllBtn" class="delete-all">DELETE ALL</button>
+</div>
+
+
+<table>
+<thead>
+<tr>
+<th>TASK</th>
+<th>DUE DATE</th>
+<th>STATUS</th>
+<th>ACTIONS</th>
+</tr>
+</thead>
+<tbody id="todoTableBody">
+<tr>
+<td colspan="4" class="empty">No task found</td>
+</tr>
+</tbody>
+</table>
+
+
+</div>
+
+
+</html>
